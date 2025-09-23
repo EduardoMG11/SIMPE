@@ -17,9 +17,9 @@ export default function TelaHome() {
     <ScrollView style={styles.container}>
       <View style={styles.header}>
         <View style={styles.userInfo}>
-          <View style={styles.avatar}>
+          <TouchableOpacity style={styles.avatar} onPress={() => navigation.navigate('telaPerfil')}>
             <Text style={styles.avatarText}>M</Text>
-          </View>
+          </TouchableOpacity>
           <Text style={styles.username}>marceneiro XYZ</Text>
         </View>
         <TouchableOpacity style={styles.settingsButton}>

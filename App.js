@@ -8,6 +8,7 @@ import TelaLogIn from './Telas/telaLogIn';
 import TelaHome from './Telas/telaHome';
 import TelaServicos from './Telas/telaServicos';
 import TelaOferecerServico from './Telas/telaOferecerServico';
+import TelaPerfil from './Telas/telaPerfil'
 
 const Stack = createStackNavigator();
 
@@ -43,6 +44,11 @@ export default function App() {
         <Stack.Screen 
           name="telaOferecerServico" 
           component={TelaOferecerServico} 
+          options={{ headerShown: true, headerTitle: '' }} 
+        />
+        <Stack.Screen 
+          name="telaPerfil" 
+          component={TelaPerfil} 
           options={{ headerShown: true, headerTitle: '' }} 
         />
       </Stack.Navigator>
